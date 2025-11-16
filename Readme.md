@@ -141,6 +141,19 @@ Updates feedback for an assistant message.
 
 # 📸 Screenshots
 
+## 🏠 Home Screen
 ![Home Screen](screenshots/home.png)
+
+## 💬 Chat Screen
 ![Chat Screen](screenshots/chat.png)
+
+## 🌙 Dark Mode
 ![Dark Mode](screenshots/darkmode.png)
+
+---
+
+## 👨‍💻 Author
+
+**Rohit Raparthi**  
+📧 [rohit.raparthi2003@gmail.com](mailto:rohit.raparthi2003@gmail.com)  
+💼 [LinkedIn](https://www.linkedin.com/in/rohit-raparthi/) / [GitHub](https://github.com/RohitRaparthi/)
