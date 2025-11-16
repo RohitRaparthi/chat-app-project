@@ -6,7 +6,7 @@ export default function Landing() {
 
   const startNew = async () => {
     try {
-      const resp = await fetch('http://localhost:4000/api/new-chat');
+      const resp = await fetch('https://chat-app-project-4321.onrender.com/api/new-chat');
       const data = await resp.json();
       navigate(`/chat/${data.id}`);
     } catch (e) {
