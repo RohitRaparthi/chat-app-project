@@ -12,7 +12,7 @@ export default function ChatWindow() {
 
   const fetchSession = async () => {
     try {
-      const res = await fetch(`http://localhost:4000/api/session/${sessionId}`);
+      const res = await fetch(`https://chat-app-project-4321.onrender.com/api/session/${sessionId}`);
       if (res.ok) {
         const data = await res.json();
         setSession(data);
@@ -39,7 +39,7 @@ export default function ChatWindow() {
     if (!question.trim()) return;
     setLoading(true);
     try {
-      await fetch(`http://localhost:4000/api/chat/${sessionId}`, {
+      await fetch(`https://chat-app-project-4321.onrender.com/api/chat/${sessionId}`, {
         method: 'POST',
         headers: { 'Content-Type': 'application/json' },
         body: JSON.stringify({ question })
@@ -56,7 +56,7 @@ export default function ChatWindow() {
 
   const sendFeedback = async (messageIndex, feedback) => {
     try {
-      await fetch(`http://localhost:4000/api/feedback/${sessionId}/${messageIndex}`, {
+      await fetch(`https://chat-app-project-4321.onrender.com/api/feedback/${sessionId}/${messageIndex}`, {
         method: 'POST',
         headers: { 'Content-Type': 'application/json' },
         body: JSON.stringify({ feedback })

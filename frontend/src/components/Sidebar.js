@@ -8,7 +8,7 @@ export default function Sidebar({ collapsed, setCollapsed }) {
 
   const fetchSessions = async () => {
     try {
-      const res = await fetch('http://localhost:4000/api/sessions');
+      const res = await fetch('https://chat-app-project-4321.onrender.com/api/sessions');
       const data = await res.json();
       setSessions(data.sort((a,b)=> new Date(b.createdAt)-new Date(a.createdAt)));
     } catch (e) {
@@ -20,7 +20,7 @@ export default function Sidebar({ collapsed, setCollapsed }) {
 
   const newChat = async () => {
     try {
-      const res = await fetch('http://localhost:4000/api/new-chat');
+      const res = await fetch('https://chat-app-project-4321.onrender.com/api/new-chat');
       const { id } = await res.json();
       navigate(`/chat/${id}`);
     } catch (e) {
